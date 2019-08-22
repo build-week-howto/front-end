@@ -2,6 +2,8 @@ import React from 'react';
 import logo from '../../assets/landing-img.png';
 import './landingpage.scss';
 
+import { Link } from 'react-router-dom';
+
 const LandingPage = () => {
   return (
     <div className='landing-page-container'>
@@ -15,8 +17,13 @@ const LandingPage = () => {
         <br />
         Have some know-how? Pay it forward.
       </h3>
-      <button>Sign Up</button>
-      <button>Login</button>
+      <Link to='/signup'>
+        <button>Sign Up</button>
+      </Link>
+      <Link to='/signin'>
+        <button>Login</button>
+      </Link>
+
       <p>Copyright © 2019 ICDT, LLC No Rights Reserved</p>
     </div>
   );
