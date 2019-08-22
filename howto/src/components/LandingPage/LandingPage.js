@@ -5,7 +5,7 @@ import './landingpage.scss';
 const LandingPage = () => {
   return (
     <div className='landing-page-container'>
-      <img src={logo} alt='logo' />
+      <img className='toolbox"' src={logo} alt='logo' />
       <h1>I can do that!</h1>
       <h3>
         Life hacks for the optimistic in you, by people just like you.,
