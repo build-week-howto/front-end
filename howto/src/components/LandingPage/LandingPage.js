@@ -5,7 +5,10 @@ import './landingpage.scss';
 const LandingPage = () => {
   return (
     <div className='landing-page-container'>
-      <img className='toolbox"' src={logo} alt='logo' />
+      <div className='logo'>
+        <img className='toolbox"' src={logo} alt='logo' />
+      </div>
+
       <h1>I can do that!</h1>
       <h3>
         Life hacks for the optimistic in you, by people just like you.,
