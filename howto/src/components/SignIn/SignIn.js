@@ -36,10 +36,7 @@ const SignIn = ({ errors, touched, values, status }) => {
       </Form>
 
       {user.map(users => (
-        <p key={users.id}>
-          {users.FirstName} You have sucessfully signed up, please check{' '}
-          {users.email} for a verification email.
-        </p>
+        <p key={users.id}>{users.FirstName} You have sucessfully logged in.</p>
       ))}
     </div>
   );
