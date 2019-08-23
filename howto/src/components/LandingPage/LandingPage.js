@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../assets/landing-img.png';
+import logo from '../../assets/image1.jpg';
 import './landingpage.scss';
 
 import { Link } from 'react-router-dom';
@@ -7,24 +7,26 @@ import { Link } from 'react-router-dom';
 const LandingPage = () => {
   return (
     <div className='landing-page-container'>
-      <div className='logo'>
-        <img className='toolbox"' src={logo} alt='logo' />
-      </div>
+      <section className='welcome'>
+        <h2>Life hacks for the optimistic in you.</h2>
+        <h3>By people just like you.</h3>
 
-      <h1>I can do that!</h1>
-      <h3>
-        Life hacks for the optimistic in you, by people just like you.,
-        <br />
-        Have some know-how? Pay it forward.
-      </h3>
-      <Link to='/signup'>
-        <button>Sign Up</button>
-      </Link>
-      <Link to='/signin'>
-        <button>Login</button>
-      </Link>
+        <img src={logo} className='tools' alt='Tools' />
 
-      <p>Copyright © 2019 ICDT, LLC No Rights Reserved</p>
+        <h4>Have some know-how?</h4>
+        <h5>Pay it forward.</h5>
+      </section>
+
+      <section className='buttons'>
+        <Link to='/signup'>
+          <button>Sign Up</button>
+        </Link>
+        <Link to='/signin'>
+          <button>Login</button>
+        </Link>
+      </section>
+
+      <footer>Copyright © 2019 ICDT, LLC No Rights Reserved</footer>
     </div>
   );
 };

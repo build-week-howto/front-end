@@ -1,0 +1,45 @@
+.logo {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: #eeeeee;
+  border-bottom: solid #5c9ead 5px;
+  padding: 5px 0 5px 0;
+  //   position: fixed;
+  width: 100%;
+}
+.logo .toolbox {
+  width: 65px;
+  padding: 10px 7px 8.9px 7px;
+}
+@media (min-width: 800px) {
+  .logo .toolbox {
+    width: 75px;
+    padding: 10px 7px 8.9px 7px;
+  }
+}
+@media (min-width: 1000px) {
+  .logo .toolbox {
+    width: 70px;
+    padding: 10px 7px 8.9px 7px;
+  }
+}
+.logo h1 {
+  align-self: center;
+  color: #e39774;
+  font-size: 3.5rem;
+}
+@media (min-width: 800px) {
+  .logo h1 {
+    align-self: center;
+    color: #e39774;
+    font-size: 4.5rem;
+  }
+}
+@media (min-width: 1000px) {
+  .logo h1 {
+    align-self: center;
+    color: #e39774;
+    font-size: 3.5rem;
+  }
+}
