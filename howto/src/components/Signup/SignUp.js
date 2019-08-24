@@ -49,19 +49,7 @@ const UserForm = ({ errors, touched, values, status }) => {
           )}
         </label>
         <br />
-        <label htmlFor=''>
-          Terms of Service
-          <Field
-            component='input'
-            type='checkbox'
-            name='tos'
-            placeholder='TOS'
-            checked={values.tos}
-          />
-        </label>
-        {touched.tos && errors.tos && (
-          <p style={{ margin: '0', color: 'red' }}>{errors.tos}</p>
-        )}
+
         <div className='buttons'>
           <button type=''>Cancel</button>
           <button type='submit'>Sign Up</button>
@@ -83,12 +71,11 @@ const UserForm = ({ errors, touched, values, status }) => {
 };
 
 const SignUp = withFormik({
-  mapPropsToValues({ username, password, tos, type }) {
+  mapPropsToValues({ username, password, type }) {
     return {
       username: username || '',
       password: password || '',
-      type: type || 'creator',
-      tos: tos || false
+      type: type || 'creator'
     };
   },
 
@@ -110,7 +97,7 @@ const SignUp = withFormik({
         setStatus(res.data);
         // resetForm();
       })
-      .catch(err => console.error('Error', err.response));
+      .catch(err => console.error('Error', err.message));
   }
 })(UserForm);
 
