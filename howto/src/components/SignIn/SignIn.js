@@ -49,7 +49,7 @@ const SignIn = ({ errors, touched, values, status }) => {
       </Form>
 
       {user.map(users => (
-        <p key={users.id}>{users.FirstName} You have sucessfully logged in.</p>
+        <p key={users.id}>{users.FirstName} You have successfully logged in.</p>
       ))}
     </div>
   );
