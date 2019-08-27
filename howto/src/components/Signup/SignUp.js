@@ -89,13 +89,15 @@ const SignUp = withFormik({
     type: Yup.string()
   }),
 
-  handleSubmit(values, { setStatus, resetForm }) {
+  handleSubmit(values, { setStatus, resetForm, props }) {
     console.log('Form submitted', values);
     Axios.post('http://bw-how-to.herokuapp.com/register', values)
       .then(res => {
         console.log(res.data);
         setStatus(res.data);
-        // resetForm();
+        localStorage.setItem('token', res.data.token);
+        props.history.push('/homepage');
+        resetForm();
       })
       .catch(err => console.error('Error', err.message));
   }

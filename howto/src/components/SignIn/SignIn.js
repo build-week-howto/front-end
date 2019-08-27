@@ -71,20 +71,23 @@ const FormikSignIn = withFormik({
       .matches(/[a-zA-Z]/, 'Password can only contain Latin letters.')
   }),
 
-  handleSubmit(values, { props, setStatus }) {
-    console.log('Form submited', values);
-    Axios.post('https://bw-how-to.herokuapp.com/login', values)
-      .then(res => {
-        // console.log(res);
-        if (res.status === 200) {
-          props.history.push(`/homepage`);
-          setStatus(res.data);
-        }
-
-        // resetForm();
-      })
-      .catch(err => console.error('Error', err.response));
+  componentDidMount(){
+    handleSubmit(values, { props, setStatus }) {
+      console.log('Form submited', values);
+      Axios.post('https://bw-how-to.herokuapp.com/login', values)
+        .then(res => {
+          // console.log(res);
+          if (res.status === 200) {
+            props.history.push(`/homepage`);
+            setStatus(res.data);
+          }
+  
+          // resetForm();
+        })
+        .catch(err => console.error('Error', err.response));
+    }
   }
+
 })(SignIn);
 
 export default FormikSignIn;
