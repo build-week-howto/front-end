@@ -35,6 +35,7 @@ const UserForm = ({ errors, touched, values, status }) => {
             <p style={{ margin: '0', color: 'red' }}>{errors.username}</p>
           )}
         </label>
+        <br />
         <label className='inputLabels' htmlFor='psw'>
           <b>Password</b>
           <Field
