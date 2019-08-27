@@ -16,8 +16,8 @@ import SearchPage from './components/SearchPage/SearchPage';
 function App() {
   useEffect(() => {
     Axios.post('https://bw-how-to.herokuapp.com/login', {
-      username: 'tester',
-      password: 'password123',
+      username: 'Chef213',
+      password: 'password1',
       type: 'creator'
     })
       .then(res => {
