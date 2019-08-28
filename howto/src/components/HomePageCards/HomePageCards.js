@@ -10,13 +10,20 @@ const HomePageCards = props => {
       <Card>
         <Card.Header>{props.title}</Card.Header>
         <Card.Meta>
-          <span className='date'>Species: {props.type}</span>
+          <span className='date'>Type: {props.type}</span>
         </Card.Meta>
         <Card.Description>
-          Location: {props.step_1}
+          Step 1: {props.step_1}
           <br />
-          Origin: {props.step_2}
+          Step 2: {props.step_2}
+          <br />
+          Step 3: {props.step_3}
+          <br />
+          Step 4: {props.step_4}
+          <br />
+          Step 5: {props.step_5}
         </Card.Description>
+        <span className='date'>User: {props.username}</span>
       </Card>
     </Grid.Column>
   );
