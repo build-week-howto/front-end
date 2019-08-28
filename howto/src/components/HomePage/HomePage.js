@@ -12,7 +12,7 @@ const HomePage = props => {
       headers: { authorization: token }
     })
       .then(res => {
-        console.log('Data', res.data);
+        // console.log('Data', res.data);
         setUsers(res.data);
       })
       .catch(err => console.error(err));
