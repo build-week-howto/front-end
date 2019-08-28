@@ -1,4 +1,13 @@
-.card-container {
-  width: 300px;
-  margin: 0 auto;
+.grid-view {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.grid-view div.card.ui {
+  margin: 1.8rem;
+}
+
+.title {
+  font-size: 2rem;
 }

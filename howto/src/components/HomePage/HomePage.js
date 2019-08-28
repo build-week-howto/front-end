@@ -19,7 +19,7 @@ const HomePage = props => {
   }, []);
 
   return (
-    <div>
+    <div className='character-list grid-view'>
       {users.map(user => (
         <HomePageCards {...user} key={user.id} />
       ))}
