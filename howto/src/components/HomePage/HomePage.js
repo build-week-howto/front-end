@@ -14,7 +14,7 @@ Axios.get('https://bw-how-to.herokuapp.com/guides', {
   headers: { authorization: token }
 })
   .then(res => {
-    console.log(res.data);
+    console.log('Data', res.data);
   })
   .catch(err => console.error(err));
 

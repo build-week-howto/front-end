@@ -21,6 +21,7 @@ function App() {
       type: 'creator'
     })
       .then(res => {
+        localStorage.setItem('id', res.data.id);
         console.log(res.data);
       })
       .catch(err => console.log(err));

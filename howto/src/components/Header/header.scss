@@ -43,3 +43,319 @@
     font-size: 3.5rem;
   }
 }
+
+ul {
+  display: flex;
+  align-self: center;
+  width: auto;
+}
+ul li {
+  list-style: none;
+  text-align: center;
+  display: block;
+  border-right: 1px solid #5c9ead;
+}
+ul li:last-child {
+  border-right: none;
+}
+ul li a {
+  text-decoration: none;
+  padding: 0 10px;
+  display: block;
+}
+ul li a:hover .icon .fa {
+  transform: translateY(-100%);
+}
+ul li a .name {
+  position: relative;
+  height: 20px;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+}
+ul li a .name span {
+  display: block;
+  position: relative;
+  color: #035e7b;
+  font-size: 15px;
+  line-height: 20px;
+  transition: 0.5s;
+}
+ul li a .name span:before {
+  content: attr(data-text);
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #e39774;
+}
+ul li a:hover .name span {
+  transform: translateY(20px);
+}
+ul li a .icon {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  overflow: hidden;
+}
+ul li a .icon .fa {
+  width: 100%;
+  height: 100%;
+  line-height: 40px;
+  font-size: 25px;
+  transition: 0.5s;
+  color: #035e7b;
+}
+ul li a .icon .fa:last-child {
+  color: #e39774;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #e39774;
+  color: rgba(255, 255, 255, 0.404);
+  width: 100%;
+  margin: 10px 0 0 0;
+  padding: 5px 0 5px 0;
+  font-family: 'Varela Round', sans-serif;
+}
+.headerNavBar {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  background-color: #eeeeee;
+  padding: 0 0px 0 10px;
+  position: fixed;
+  width: 100%;
+  border-bottom: solid #5c9ead 5px;
+  z-index: 1;
+}
+.headerNavBar .logo {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: #eeeeee;
+}
+.headerNavBar .toolbox {
+  align-self: center;
+  width: 32px;
+  height: 26px;
+  margin: 0px 5px 0px 0px;
+}
+@media (min-width: 800px) {
+  .headerNavBar .toolbox {
+    align-self: center;
+    width: 52px;
+    height: 46px;
+    margin: 8px 0px 8px 0px;
+  }
+}
+@media (min-width: 1000px) {
+  .headerNavBar .toolbox {
+    align-self: center;
+    width: 62px;
+    height: 56px;
+    margin: 10px 0px 10px 0px;
+  }
+}
+.headerNavBar h1 {
+  align-self: center;
+  color: #e39774;
+  font-size: 33px;
+}
+@media (min-width: 800px) {
+  .headerNavBar h1 {
+    align-self: center;
+    color: #e39774;
+    font-size: 3.5rem;
+  }
+}
+@media (min-width: 1000px) {
+  .headerNavBar h1 {
+    align-self: center;
+    color: #e39774;
+    font-size: 4.5rem;
+  }
+}
+.allGuides {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 800px) {
+  .allGuides {
+    width: 500px;
+    align-self: center;
+  }
+}
+.allGuides .topGuide {
+  display: flex;
+  margin: 65px 0 0 0;
+}
+@media (min-width: 800px) {
+  .allGuides .topGuide {
+    margin: 10rem 0 0 0;
+  }
+}
+.allGuides .topGuide:hover .overlay {
+  opacity: 1;
+}
+.allGuides .topGuide:hover img {
+  -webkit-filter: blur(2px);
+  filter: blur(5px);
+}
+.allGuides .topGuide img,
+.allGuides .topGuide .overlay {
+  transition: 0.5s all;
+  border-radius: 0 0 13px 13px;
+}
+@media (min-width: 800px) {
+  .allGuides .topGuide img,
+  .allGuides .topGuide .overlay {
+    border-radius: 13px;
+  }
+}
+.allGuides .topGuide a {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 35px;
+  color: #eeeeee;
+  background-color: #5c9ead;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0 10px 0;
+  border-bottom: 5px solid #eeeeee;
+  text-decoration: none;
+}
+.allGuides .topGuide a:hover {
+  box-shadow: 0 10px 40px #ffffff;
+  transition: 0.5s all;
+}
+@media (min-width: 800px) {
+  .allGuides .topGuide a {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 31.23rem;
+    font-size: 3rem;
+  }
+  .allGuides .topGuide a:hover {
+    box-shadow: 0 10px 60px #ffffff;
+  }
+}
+.allGuides hr {
+  width: 100%;
+  border: 2px solid #035e7b;
+  border-radius: 13px;
+  margin: 15px 0 15px;
+}
+.allGuides .subGuides .subGuide {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+@media (min-width: 800px) {
+  .allGuides .subGuides .subGuide {
+    margin: 0px 0 10px;
+  }
+}
+.allGuides .subGuides .subGuide:hover .overlay {
+  opacity: 1;
+}
+.allGuides .subGuides .subGuide:hover img {
+  -webkit-filter: blur(2px);
+  filter: blur(5px);
+  margin: 15px 0 15px 0;
+}
+.allGuides .subGuides .subGuide:first-child img {
+  border-radius: 13px 13px 0 0;
+}
+.allGuides .subGuides .subGuide:last-child img {
+  border-radius: 0 0 13px 13px;
+}
+.allGuides .subGuides .subGuide img,
+.allGuides .subGuides .subGuide .overlay {
+  transition: 0.5s all;
+}
+@media (min-width: 800px) {
+  .allGuides .subGuides .subGuide img,
+  .allGuides .subGuides .subGuide .overlay {
+    border-radius: 13px;
+  }
+}
+.allGuides .subGuides .subGuide a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 35px;
+  color: #eeeeee;
+  background-color: #5c9ead;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0 10px 0;
+  border-bottom: 5px solid #eeeeee;
+  text-decoration: none;
+}
+.allGuides .subGuides .subGuide a:hover {
+  box-shadow: 0 10px 30px #ffffff;
+  transition: 0.5s all;
+}
+@media (min-width: 800px) {
+  .allGuides .subGuides .subGuide a:hover {
+    border-radius: 13px;
+  }
+}
+@media (min-width: 800px) {
+  .allGuides .subGuides .subGuide a {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
+  }
+  .allGuides .subGuides .subGuide a:hover {
+    box-shadow: 0 10px 60px #ffffff;
+  }
+}
+.buttons {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-content: center;
+  margin: 20px 0 14px 0px;
+}
+@media (min-width: 800px) {
+  .buttons {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    align-content: center;
+    margin: 20px 0px 15px 0px;
+  }
+}
+.buttons button {
+  background-color: #5c9ead;
+  color: #eeeeee;
+  width: 45%;
+  font-size: 2rem;
+  border-radius: 10px;
+  margin: 10px 0 10px 0;
+  padding: 0px 10px;
+}
+@media (min-width: 800px) {
+  .buttons button {
+    width: 22%;
+    font-size: 1.7rem;
+  }
+}
+.buttons button:hover {
+  cursor: pointer;
+  color: #b3ebfd;
+  background-color: #a0c6cf;
+}

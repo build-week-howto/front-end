@@ -1,40 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Steps from '../Steps/Steps';
 import { Form, Field, withFormik } from 'formik';
 // import * as Yup from 'yup';
 
 import './createguide.scss';
 
-const CreateGuide = () => {
+const CreateGuide = props => {
+  console.log(props);
   return (
     <div>
-      <Form>
-        <Field
-          component='input'
-          type='text'
-          name='title'
-          placeholder='Guide Name'
-        />
-        <Field
-          component='input'
-          type='text'
-          name='keywords'
-          placeholder='Keywords'
-        />
-        <Field
-          component='input'
-          type='text'
-          name='supplies'
-          placeholder='supplies'
-        />
-        <Field
-          component='input'
-          type='textarea'
-          name='steps'
-          placeholder='steps'
-          row='2'
-        />
-        <button type='submit'>Submit</button>
-      </Form>
+      <Steps />
     </div>
   );
 };
