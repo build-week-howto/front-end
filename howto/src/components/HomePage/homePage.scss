@@ -1,0 +1,125 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+div.card {
+	border: 3px solid rgb(89, 158, 173);
+	width: 95%;
+	margin: 0 auto;
+	
+	margin-top: 40px;
+
+}
+div.card h2{
+	margin-top: 40px;
+	margin-bottom: 10px;
+	color: rgb(229, 151, 117);
+	font-size: 3rem;
+	text-align: center;
+}
+
+div.card h3.h3Description{
+	font-size: 2rem;
+	color: rgb(230, 0, 0);
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+div.card h3.h3Catagory{
+	font-size: 2rem;
+	color: rgb(230, 0, 0);
+	margin-bottom: 10px;
+	text-align: left;
+	margin-left: 5px;
+}
+div.card p{
+	font-size: 1.4rem;
+	color: rgb(96, 57, 39);
+	text-align: left;
+	margin-bottom: 6px;
+	margin-left: 5px;
+}
+div.iFrame-container{
+
+	margin: 0 auto;
+	 overflow: hidden;
+  	padding-top: 56.25%;
+  	position: relative;
+  	margin-top: 60px;
+
+}
+div.iFrame-container iframe{
+	border: 0;
+	height: 75%;
+	left: 10%;
+	position: absolute;
+	top: 0;
+	width: 75%;
+}
+
+div.homPageCTA{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-top: 10px;
+
+}
+div.homPageCTA .button{
+	font-size: 4rem;
+	border-radius: 10px;
+	background-color: rgb(89, 158, 173);
+	color: white;
+	
+
+}
+
+/* media queries. */
+
+
+

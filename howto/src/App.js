@@ -14,6 +14,8 @@ import CreateGuide from './components/CreateGuide/CreateGuide';
 import SearchPage from './components/SearchPage/SearchPage';
 
 function App() {
+ const [user, setUser] = useState('');
+
   useEffect(() => {
     Axios.post('https://bw-how-to.herokuapp.com/login', {
       username: 'Chef213',
@@ -21,7 +23,9 @@ function App() {
       type: 'creator'
     })
       .then(res => {
-        console.log(res.data);
+        
+        setUser(res.data.username);
+       
       })
       .catch(err => console.log(err));
   }, []);
