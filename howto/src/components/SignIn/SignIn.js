@@ -26,7 +26,7 @@ const SignIn = ({ errors, touched, values, status }) => {
             component='input'
             type='text'
             name='username'
-            placeholder='User Name'
+            placeholder='Chef213'
           />
           {touched.username && errors.username && <p>{errors.username}</p>}
         </label>
@@ -38,7 +38,7 @@ const SignIn = ({ errors, touched, values, status }) => {
             component='input'
             type='password'
             name='password'
-            placeholder='Password'
+            placeholder='password1'
           />
           {touched.password && errors.password && <p>{errors.password}</p>}
         </label>
