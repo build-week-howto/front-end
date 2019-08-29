@@ -10,7 +10,7 @@ import LandingPage from './components/LandingPage/LandingPage';
 import SignIn from './components/SignIn/SignIn';
 import SignUp from './components/Signup/SignUp';
 import HomePage from './components/HomePage/HomePage';
-import CreateGuide from './components/CreateGuide/CreateGuide';
+import Steps from './components/Steps/Steps';
 import SearchPage from './components/SearchPage/SearchPage';
 import Profile from './components/Profile/Profile';
 
@@ -36,7 +36,7 @@ function App() {
         <Route path='/signup' component={SignUp} />
         <Route path='/signin' component={SignIn} />
         <Route path='/homepage' component={HomePage} />
-        <Route path='/create' component={CreateGuide} />
+        <Route path='/create' component={Steps} />
         <Route path='/search' component={SearchPage} />
         <Route path='/profile' component={Profile} />
       </Switch>
