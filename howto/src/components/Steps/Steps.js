@@ -1,11 +1,13 @@
 import React from 'react';
 import { Formik, Form, Field, FieldArray } from 'formik';
 
+import './steps.scss';
+
 // Here is an example of a form with an editable list.
 // Next to each input are buttons for insert and remove.
 // If the list is empty, there is a button to add an item.
 const Steps = props => (
-  <div>
+  <div className='steps-container'>
     <h1>Steps</h1>
     <Formik
       initialValues={{ steps: ['', '', ''] }}
@@ -15,7 +17,7 @@ const Steps = props => (
         }, 500)
       }
       render={({ values }) => (
-        <Form>
+        <Form className='form-container'>
           <Field
             component='input'
             type='text'
