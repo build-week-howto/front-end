@@ -1,9 +1,10 @@
 .grid-view {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
 }
 
 .MuiPaper-root {
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
   margin: 50px;
 }
