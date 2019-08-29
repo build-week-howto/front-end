@@ -1,8 +1,10 @@
 .steps-container {
+  width: 50%;
   margin: 0 auto;
 
-  h1 {
-    margin: 100px;
+  .title {
+    margin: 10px auto;
+    font-size: 2rem;
   }
 
   .form-container {
@@ -11,9 +13,14 @@
     align-items: center;
 
     input {
-      max-width: 200px;
+      width: 300px;
       margin: 10px 36px 10px 0;
       padding: 10px;
+    }
+
+    textarea {
+      width: 350px;
+      height: 150px;
     }
   }
 }

@@ -8,7 +8,7 @@ import './steps.scss';
 // If the list is empty, there is a button to add an item.
 const Steps = props => (
   <div className='steps-container'>
-    <h1>Steps</h1>
+    <h1 className='title'>Create A New Post</h1>
     <Formik
       initialValues={{ steps: ['', '', ''] }}
       onSubmit={values =>
@@ -54,13 +54,13 @@ const Steps = props => (
                         type='button'
                         onClick={() => arrayHelpers.remove(index)} // remove a friend from the list
                       >
-                        -
+                        Remove Steps
                       </button>
                       <button
                         type='button'
                         onClick={() => arrayHelpers.insert(index, '')} // insert an empty string at a position
                       >
-                        +
+                        Add Steps
                       </button>
                     </div>
                   ))
