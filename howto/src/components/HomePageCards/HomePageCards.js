@@ -70,23 +70,23 @@ const HomePageCards = props => {
         <CardContent>
           <Typography paragraph>Method:</Typography>
           <Typography paragraph>
-            <strong>Step 1:</strong>
+            <strong>Step 1: </strong>
             {props.step_1}
           </Typography>
           <Typography paragraph>
-            <strong>Step 2:</strong>
+            <strong>Step 2: </strong>
             {props.step_2}
           </Typography>
           <Typography paragraph>
-            <strong>Step 3:</strong>
+            <strong>Step 3: </strong>
             {props.step_3}
           </Typography>
           <Typography>
-            <strong>Step 4:</strong>
+            <strong>Step 4: </strong>
             {props.step_4}
           </Typography>
           <Typography>
-            <strong>Step 5:</strong>
+            <strong>Step 5: </strong>
             {props.step_5}
           </Typography>
         </CardContent>

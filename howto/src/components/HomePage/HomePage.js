@@ -1,10 +1,25 @@
 import React, { useEffect, useState } from 'react';
 import Axios from 'axios';
+import { makeStyles } from '@material-ui/core/styles';
+import Button from '@material-ui/core/Button';
+import { Link } from 'react-router-dom';
+
+import './homepage.scss';
 
 import HomePageCards from '../HomePageCards/HomePageCards';
 
+const useStyles = makeStyles(theme => ({
+  button: {
+    margin: theme.spacing(1)
+  },
+  input: {
+    display: 'none'
+  }
+}));
+
 const HomePage = props => {
   const [users, setUsers] = useState([]);
+  const classes = useStyles();
 
   useEffect(() => {
     const token = localStorage.getItem('token');
@@ -19,7 +34,19 @@ const HomePage = props => {
   }, []);
 
   return (
-    <div className='character-list grid-view'>
+    <div className='card-container'>
+      <div>
+        <Link to='/create'>
+          <Button
+            variant='contained'
+            color='primary'
+            className={classes.button}
+          >
+            Create Post
+          </Button>
+        </Link>
+      </div>
+
       {users.map(user => (
         <HomePageCards {...user} key={user.id} />
       ))}
