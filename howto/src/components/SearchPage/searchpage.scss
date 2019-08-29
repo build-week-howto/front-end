@@ -1,0 +1,55 @@
+.title {
+  margin: 150px 0 0 0;
+  color: #035e7b;
+}
+.title .search {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Shadows Into Light', cursive;
+}
+.title .search .inputLabels {
+  font-size: 4rem;
+}
+input {
+  width: 90%;
+}
+
+.title .search .inputFields {
+  height: 30px;
+  font-size: 20px;
+}
+.filter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #035e7b;
+  font-family: 'Red Hat Text', sans-serif;
+  margin: 100px 0 0 0;
+}
+.filter .filterTxt {
+  align-self: flex-start;
+  font-size: 25px;
+  margin: 0 0 0 10px;
+}
+// .buttons {
+//   display: flex;
+//   flex-direction: column;
+//   align-self: flex-end;
+//   margin: 0 40px 0 0;
+// }
+// .buttons button {
+//   background-color: #5c9ead;
+//   color: #eeeeee;
+//   width: 100px;
+//   border-radius: 10px;
+//   margin: 10px 20px 10px 0;
+//   padding: 10px 10px;
+// }
+// .buttons button:hover {
+//   cursor: pointer;
+//   color: #b3ebfd;
+//   background-color: #a0c6cf;
+// }
+// .buttons button a {
+//   font-size: 20px;
+// }
