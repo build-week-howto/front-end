@@ -72,13 +72,13 @@ const FormikSignIn = withFormik({
   }),
 
   handleSubmit(values, { props, setStatus }) {
-    console.log('Form submited', values);
+    // console.log('Form submited', values);
     Axios.post('https://bw-how-to.herokuapp.com/login', values)
       .then(res => {
         // console.log(res);
         if (res.status === 200) {
+          // setStatus(res.data);
           props.history.push(`/homepage`);
-          setStatus(res.data);
         }
 
         // resetForm();
