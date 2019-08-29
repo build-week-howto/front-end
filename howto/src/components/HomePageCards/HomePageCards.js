@@ -1,5 +1,5 @@
 import React from 'react';
-import './homepagecards.scss';
+// import './homepagecards.scss';
 
 import { makeStyles } from '@material-ui/core/styles';
 import clsx from 'clsx';
