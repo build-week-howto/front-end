@@ -16,6 +16,17 @@ import SearchPage from './components/SearchPage/SearchPage';
 function App() {
  const [user, setUser] = useState('');
 
+   const buttonHandler = (event) => {
+    console.log('click in function');
+    if (event.target.name === "find"){
+      return <Route path='/search' component={SearchPage} />;
+    }
+    else{
+      return <CreateGuide />;
+    }
+  }
+
+
   useEffect(() => {
     Axios.post('https://bw-how-to.herokuapp.com/login', {
       username: 'Chef213',
@@ -23,8 +34,7 @@ function App() {
       type: 'creator'
     })
       .then(res => {
-        
-        setUser(res.data.username);
+        setUser(res.data);
        
       })
       .catch(err => console.log(err));
@@ -37,9 +47,9 @@ function App() {
         <Route exact path='/' component={LandingPage} />
         <Route path='/signup' component={SignUp} />
         <Route path='/signin' component={SignIn} />
-        <Route path='/homepage' component={HomePage} />
-        <Route path='/create' component={CreateGuide} />
-        <Route path='/search' component={SearchPage} />
+        <Route path='/homepage' component={HomePage} user={user}  />
+        <Route path='/create' component={CreateGuide} buttonHandler={buttonHandler}/>
+        <Route path='/search' component={SearchPage} buttonHandler={buttonHandler}/>
       </Switch>
     </div>
   );

@@ -63,6 +63,31 @@ div.card h2{
 	font-size: 3rem;
 	text-align: center;
 }
+.homePageNav{
+	display: flex;
+	margin-top: 10px;
+
+
+}
+.homePageDivLink{
+	width: 100%;
+	text-align: right;
+}
+.homePageLink{
+	font-size: 1.7rem;
+	margin-right: 30px;
+	text-decoration: none;
+	font-weight: bold;
+}
+.homePageLink:hover{
+	color: rgb(229, 151, 117)
+}
+.homePageLink.active{
+	font-weight: bold;
+	margin-right: 30px;
+	color: red;
+}
+
 
 div.card h3.h3Description{
 	font-size: 2rem;
@@ -78,6 +103,14 @@ div.card h3.h3Catagory{
 	text-align: left;
 	margin-left: 5px;
 }
+div.card h3.h3Creator{
+	font-size: 2rem;
+	color: rgb(230, 0, 0);
+	margin-bottom: 10px;
+	text-align: left;
+	margin-left: 5px;
+}
+
 div.card p{
 	font-size: 1.4rem;
 	color: rgb(96, 57, 39);
